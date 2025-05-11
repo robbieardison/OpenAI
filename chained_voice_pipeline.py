@@ -1,5 +1,12 @@
 import asyncio
 import random
+from dotenv import load_dotenv
+import os
+import asyncio
+
+# Load API keys
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 from agents import (
     Agent,
